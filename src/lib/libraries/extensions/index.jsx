@@ -578,14 +578,14 @@ const menuItems = [
     {
         name: 'Censorship',
         extensionId: 'profanityAPI',
-        description: 'Censor profanity.',
+        description: 'Remove profanity.',
         iconURL: noImageExtensionIcon,
         featured: true
     },
     {
         name: 'Post Lit',
-        extensionId: 'jwPostlit',
-        description: 'idk.',
+        extensionId: 'jwPostLit',
+        description: 'postlit real?',
         iconURL: noImageExtensionIcon,
         featured: true
     },
@@ -602,7 +602,7 @@ const menuItems = [
         description: 'Vector Positioning but uh, this is not supposed to be here i think?',
         iconURL: noImageExtensionIcon,
         featured: true,
-        disabled: (IsLocal || IsLiveTests)
+        disabled: !(IsLocal || IsLiveTests)
     },
     {
         name: (
