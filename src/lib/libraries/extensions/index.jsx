@@ -723,6 +723,7 @@ const menuItems = [
         description: "Get a user's scratch name to prove they are a real scratch user.",
         featured: true
     },
+    /*
     {
         name: 'JavaScript',
         extensionId: 'jgJavascript',
@@ -731,6 +732,7 @@ const menuItems = [
         description: 'Run your own custom code written in JavaScript!',
         featured: true
     },
+    */
     {
         name: (
             <FormattedMessage

@@ -1,7 +1,7 @@
 {
-  "short_name": "PenguinMod",
-  "name": "PenguinMod",
-  "description": "Mod of TurboWarp that was made to allow for really cool projects.",
+  "short_name": "Hiddenblocks",
+  "name": "Hiddenblocks",
+  "description": "Mod of Penguinmod that show hidden blocks and extensions in Penguinmod.",
   "icons": [
     {
       "src": "images/192.png",
