@@ -980,6 +980,24 @@ const sensing = function (isInitialSetup, isStage) {
             </value>
         </block>
         ${blockSeparator}
+        <block type="sensing_regextest">
+            <value name="text">
+            	<shadow type="text">
+                    <field name="TEXT">foo bar</field>
+            	</shadow>
+        	</value>
+        	<value name="reg">
+            	<shadow type="text">
+                	<field name="TEXT">foo</field>
+                </shadow>
+        	</value>
+        	<value name="regrule">
+            	<shadow type="text">
+                	<field name="TEXT">g</field>
+            	</shadow>
+        	</value>
+    	</block>
+        ${blockSeparator}
         ${isInitialSetup ? '' : `
             <block id="askandwait" type="sensing_askandwait">
                 <value name="QUESTION">
@@ -1004,6 +1022,20 @@ const sensing = function (isInitialSetup, isStage) {
                 </shadow>
             </value>
         </block>
+        <block type="sensing_thing_has_number">
+            <value name="TEXT1">
+            	<shadow type="text">
+                	<field name="TEXT">abc 10 def</field>
+            	</shadow>
+        	</value>
+    	</block>
+    	<block type="sensing_isUpperCase">
+        	<value name="text">
+            	<shadow type="text">
+                	<field name="TEXT">A</field>
+            	</shadow>
+        	</value>
+    	</block>
         ${blockSeparator}
         <block type="sensing_keypressed">
             <value name="KEY_OPTION">
@@ -1302,6 +1334,58 @@ const operators = function (isInitialSetup) {
         <block type="operator_or"/>
         <block type="operator_not"/>
         ${blockSeparator}
+        <block type="operator_countAppearTimes">
+            <value name="TEXT1">
+                <shadow type="text">
+                    <field name="TEXT">a</field>
+            	</shadow>
+            </value>
+            <value name="TEXT2">
+            	<shadow type="text">
+                	<field name="TEXT">abc abc abc</field>
+            	</shadow>
+        	</value>
+    	</block>
+    	<block type="operator_readLineInMultilineText">
+        	<value name="LINE">
+            	<shadow type="math_number">
+                	<field name="NUM">1</field>
+            	</shadow>
+        	</value>
+        	<value name="TEXT">
+            	<shadow type="text">
+                	<field name="TEXT">Text with multiple lines here</field>
+            	</shadow>
+        	</value>
+    	</block>
+    	<block type="operator_textIncludesLetterFrom">
+        	<value name="TEXT1">
+            	<shadow type="text">
+                	<field name="TEXT">abcdef</field>
+            	</shadow>
+        	</value>
+        	<value name="TEXT2">
+            	<shadow type="text">
+                	<field name="TEXT">fgh</field>
+                </shadow>
+        	</value>
+    	</block>
+    	${blockSeparator}
+    	<block type="operator_character_to_code">
+        	<value name="ONE">
+            	<shadow type="text">
+                	<field name="TEXT">a</field>
+            	</shadow>
+        	</value>
+    	</block>
+    	<block type="operator_code_to_character">
+        	<value name="ONE">
+            	<shadow type="text">
+                	<field name="TEXT">97</field>
+            	</shadow>
+        	</value>
+    	</block>
+    	${blockSeparator}
         ${isInitialSetup ? '' : `
             <block type="operator_newLine"></block>
             <block type="operator_tabCharacter"></block>
