@@ -583,6 +583,28 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Post Lit',
+        extensionId: 'jgPostlit',
+        description: 'idk.',
+        iconURL: noImageExtensionIcon,
+        featured: true
+    },
+    {
+        name: 'Core Example',
+        extensionId: 'coreExample',
+        description: 'Core Example blocks, not useful.',
+        iconURL: noImageExtensionIcon,
+        featured: true
+    },
+    {
+        name: 'Reflex',
+        extensionId: 'jwReflex',
+        description: 'uh, this is not supposed to be here i think?',
+        iconURL: noImageExtensionIcon,
+        featured: true,
+        disabled: (IsLocal || IsLiveTests)
+    },
+    {
         name: (
             <FormattedMessage
                 defaultMessage="Labels"
