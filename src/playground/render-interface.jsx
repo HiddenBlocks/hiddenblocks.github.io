@@ -475,8 +475,8 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="HiddenBlocks is a mod of PenguinMod that adds all extensions and blocks hidden in Penguin-VM. PenguinMod is a mod of TurboWarp to add new blocks and features either in extensions or in PenguinMod's main toolbox. TurboWarp is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor."
-                                        description="Description of PenguinMod and TurboWarp"
+                                        defaultMessage="HiddenBlocks is a mod of PenguinMod that adds all extensions and blocks hidden in the Penguinmod-vm. PenguinMod is a mod of TurboWarp to add new blocks and features either in extensions or in PenguinMod's main toolbox. TurboWarp is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor."
+                                        description="Description of HiddenBlocks, PenguinMod and TurboWarp"
                                         id="tw.home.description"
                                     />
                                 </p>

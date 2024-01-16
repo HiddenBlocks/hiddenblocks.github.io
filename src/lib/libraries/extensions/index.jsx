@@ -576,7 +576,7 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Profanity',
+        name: 'Censorship',
         extensionId: 'profanityAPI',
         description: 'Censor profanity.',
         iconURL: noImageExtensionIcon,

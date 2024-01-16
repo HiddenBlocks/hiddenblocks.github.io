@@ -1083,7 +1083,7 @@ const sensing = function (isInitialSetup, isStage) {
         <block type="sensing_geturl"/>
         ${blockSeparator}
         <block type="sensing_username"/>
-        <label text="This blocks doesn't work"></label>
+        <label text="This block doesn't work"></label>
         <block type="sensing_userid"></block>
         ${categorySeparator}
     </category>
