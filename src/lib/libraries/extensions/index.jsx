@@ -149,6 +149,7 @@ import pmOperatorsExpansionExtensionIcon from './penguinmod/extensions/operators
 // jg: default icon if you are too lazy to make one and you want me to make one instead lololololololol
 // gsa: ololololololo
 import defaultExtensionIcon from './penguinmod/extensions/placeholder.png';
+import noImageExtensionIcon from './penguinmod/extensions/no_image.png';
 
 const urlParams = new URLSearchParams(location.search);
 
@@ -565,6 +566,20 @@ const menuItems = [
         iconURL: gsaColorUtilExtensionIcon,
         tags: ['penguinmod'],
         description: 'Converters for Hex, RGB, HSV and Decimal colors and other color related things.',
+        featured: true
+    },
+    {
+        name: 'Blockly2Math',
+        extensionId: 'blockly2math',
+        description: 'Use math.',
+        iconURL: noImageExtensionIcon,
+        featured: true
+    },
+    {
+        name: 'Profanity',
+        extensionId: 'profanityAPI',
+        description: 'Censor profanity.',
+        iconURL: noImageExtensionIcon,
         featured: true
     },
     {
