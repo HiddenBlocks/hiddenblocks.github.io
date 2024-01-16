@@ -571,7 +571,7 @@ const menuItems = [
     {
         name: 'Blockly2Math',
         extensionId: 'blockly2math',
-        description: 'Use math.',
+        description: 'a faithful recreation of the original blockly blocks.',
         iconURL: noImageExtensionIcon,
         featured: true
     },
@@ -584,7 +584,7 @@ const menuItems = [
     },
     {
         name: 'Post Lit',
-        extensionId: 'jgPostlit',
+        extensionId: 'jwPostlit',
         description: 'idk.',
         iconURL: noImageExtensionIcon,
         featured: true
@@ -599,7 +599,7 @@ const menuItems = [
     {
         name: 'Reflex',
         extensionId: 'jwReflex',
-        description: 'uh, this is not supposed to be here i think?',
+        description: 'Vector Positioning but uh, this is not supposed to be here i think?',
         iconURL: noImageExtensionIcon,
         featured: true,
         disabled: (IsLocal || IsLiveTests)
