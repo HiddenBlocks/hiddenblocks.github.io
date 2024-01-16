@@ -94,7 +94,7 @@ const formatProjectTitle = _title => {
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'A mod of TurboWarp',
+        defaultMessage: 'A mod of Penguinmod',
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
@@ -140,8 +140,8 @@ const Footer = () => (
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
-                    defaultMessage="PenguinMod and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that PenguinMod and TurboWarp are not connected to Scratch"
+                    defaultMessage="HiddenBlocks, PenguinMod and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
+                    description="Disclaimer that HiddenBlocks, PenguinMod and TurboWarp are not connected to Scratch"
                     id="tw.footer.disclaimer"
                 />
             </div>
@@ -215,7 +215,7 @@ const Footer = () => (
                             id="tw.feedback"
                         />
                     </a>
-                    <a href="https://github.com/PenguinMod">
+                    <a href="https://github.com/HiddenBlocks">
                         <FormattedMessage
                             defaultMessage="Source Code"
                             description="Link to source code"
@@ -272,9 +272,9 @@ class Interface extends React.Component {
     }
     handleUpdateProjectTitle (title, isDefault) {
         if (isDefault || !title) {
-            document.title = `PenguinMod - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
+            document.title = `HiddenBlocks - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
         } else {
-            document.title = `${title} - PenguinMod`;
+            document.title = `${title} - HiddenBlocks`;
         }
     }
     copyProjectLink (id) {
@@ -471,17 +471,16 @@ class Interface extends React.Component {
                                     </div>
                                 </div>
                             )}
-                            {/* this is pretty pointless now that we have the home page... */}
-                            {/* <div className={styles.section}>
+                            <div className={styles.section}>
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="PenguinMod is a mod of TurboWarp to add new blocks and features either in extensions or in PenguinMod's main toolbox. TurboWarp is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor."
+                                        defaultMessage="HiddenBlocks is a mod of PenguinMod that adds all extensions and blocks hidden in Penguin-VM. PenguinMod is a mod of TurboWarp to add new blocks and features either in extensions or in PenguinMod's main toolbox. TurboWarp is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor."
                                         description="Description of PenguinMod and TurboWarp"
                                         id="tw.home.description"
                                     />
                                 </p>
-                            </div> */}
+                            </div>
                             <div className={styles.section}>
                                 <FeaturedProjects />
                             </div>
