@@ -799,6 +799,18 @@ const control = function (isInitialSetup, isStage) {
         ${blockSeparator}
         <block type="control_all_at_once"/>
         ${blockSeparator}
+        <block type="control_inline_stack_output">
+            <value name="SUBSTACK">
+                <block type="procedures_return">
+                    <value name="return">
+            	        <shadow type="text">
+            		        <field name="TEXT">1</field>
+            	        </shadow>
+                    </value>
+                </block>
+            </value>
+        </block>
+        ${blockSeparator}
         <block type="control_backToGreenFlag"></block>
         <block type="control_stop_sprite">
             <value name="STOP_OPTION">
@@ -1591,6 +1603,8 @@ const liveTests = function () {
                 </shadow>
             </value>
         </block>
+        ${blockSeparator}
+        <block type="control_new_script"></block>
         ${blockSeparator}
         <block type="control_fieldbutton"></block>
         <block type="operators_expandablejoininputs"></block>

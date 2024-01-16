@@ -573,6 +573,7 @@ const menuItems = [
         extensionId: 'blockly2math',
         description: 'a faithful recreation of the original blockly blocks.',
         iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
         featured: true
     },
     {
@@ -580,6 +581,7 @@ const menuItems = [
         extensionId: 'profanityAPI',
         description: 'Remove profanity.',
         iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
         featured: true
     },
     {
@@ -587,6 +589,7 @@ const menuItems = [
         extensionId: 'jwPostLit',
         description: 'postlit real?',
         iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
         featured: true
     },
     {
@@ -594,6 +597,7 @@ const menuItems = [
         extensionId: 'coreExample',
         description: 'Core Example blocks, not useful.',
         iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
         featured: true
     },
     {
@@ -601,6 +605,7 @@ const menuItems = [
         extensionId: 'jwReflex',
         description: 'Vector Positioning but uh, this is not supposed to be here i think?',
         iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
         featured: true,
         disabled: !(IsLocal || IsLiveTests)
     },
