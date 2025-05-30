@@ -273,9 +273,9 @@ class Interface extends React.Component {
     }
     handleUpdateProjectTitle (title, isDefault) {
         if (isDefault || !title) {
-            document.title = `PenguinMod - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
+            document.title = `HiddenBlocks - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
         } else {
-            document.title = `${title} - PenguinMod`;
+            document.title = `${title} - HiddenBlocks`;
         }
     }
     copyProjectLink (id) {
@@ -435,51 +435,16 @@ class Interface extends React.Component {
                                     />
                                 </div>
                             ) : null}
-                            {extraProjectInfo.author && (
-                                <VoteFrame
-                                    id={projectId}
-                                    darkmode={this.props.isDark}
-                                />
-                            )}
-                            {projectId !== '0' && extraProjectInfo.author && (
-                                <div>
-                                    {`${isUpdated ? 'Updated' : 'Uploaded'} ${projectReleaseMonth} ${projectReleaseDay} ${projectReleaseYear} at ${projectReleaseHour}:${projectReleaseMinute < 10 ? '0' : ''}${projectReleaseMinute} ${projectReleaseHalf}`}
-                                    <div className={styles.centerSector}>
-                                        <button
-                                            onClick={() => this.copyProjectLink(projectId)}
-                                            className={styles.shareLink}
-                                        >
-                                            <img
-                                                src="/share_project.png"
-                                                alt=">"
-                                            />
-                                            {'Copy Link'}
-                                        </button>
-                                        <a
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            href={`https://penguinmod.com/report?type=project&id=${projectId}`}
-                                            className={styles.reportLink}
-                                        >
-                                            <img
-                                                src="report_flag.png"
-                                                alt="!"
-                                            />
-                                            {'Report'}
-                                        </a>
-                                    </div>
-                                </div>
-                            )}
                             <div className={styles.section}>
-                                <FeaturedProjects />
+                                <p>
+                                    <FormattedMessage
+                                        // eslint-disable-next-line max-len
+                                        defaultMessage="HiddenBlocks is a mod of PenguinMod that adds all extensions and blocks hidden in the Penguinmod-vm. PenguinMod is a mod of TurboWarp to add new blocks and features either in extensions or in PenguinMod's main toolbox. TurboWarp is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor."
+                                        description="Description of HiddenBlocks, PenguinMod and TurboWarp"
+                                        id="tw.home.description"
+                                    />
+                                </p>
                             </div>
-                            <a
-                                target="_blank"
-                                href="https://penguinmod.com/search?q=newest:"
-                                rel="noreferrer"
-                            >
-                                See more projects
-                            </a>
                         </React.Fragment>
                     ) : null}
                 </div>
