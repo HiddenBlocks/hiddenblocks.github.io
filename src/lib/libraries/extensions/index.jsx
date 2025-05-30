@@ -776,7 +776,7 @@ const menuItems = [
     {
         name: 'Reflex',
         extensionId: 'jwReflex',
-        description: 'Vector Positioning but uh, this is not supposed to be here i think?',
+        description: 'Vector Positioning',
         iconURL: noImageExtensionIcon,
         tags: ['penguinmod'],
         featured: true,
@@ -942,6 +942,15 @@ const menuItems = [
         tags: ['penguinmod', 'graphics'],
         description: 'Utilities for anything involving colors.',
         extDeveloper: 'jwklong',
+        featured: true
+    },
+    {
+        name: 'Lambda',
+        extensionId: 'jwLambda',
+        description: 'Test Extension for Lambda functions.',
+        iconURL: noImageExtensionIcon,
+        extDeveloper: 'jwklong',
+        tags: ['penguinmod'],
         featured: true
     },
     {
