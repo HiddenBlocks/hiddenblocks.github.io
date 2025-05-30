@@ -940,7 +940,7 @@ const control = function (isInitialSetup, isStage) {
     `;
 };
 
-const sensing = function (isInitialSetup, isStage) {
+const sensing = function (isInitialSetup, isStage, targetId) {
     const name = translate('SENSING_ASK_TEXT', 'What\'s your name?');
     // const openDocumentation = translate('OPEN_DOCUMENTATION', 'Open Documentation');
     const helpManual = translate('HELP_MANUAL', 'Help Manual');
@@ -1895,11 +1895,11 @@ const makeToolboxXML = function (isInitialSetup, isStage = true, targetId, categ
         myBlocksXML
     ];
     if (isLiveTest) everything.push(liveTestsXML);
-        
+
     for (const extensionCategory of categoriesXML) {
         everything.push(extensionCategory.xml);
     }
-        
+
     everything.push(xmlClose);
     return everything.join(`\n${gap}\n`);
 };
