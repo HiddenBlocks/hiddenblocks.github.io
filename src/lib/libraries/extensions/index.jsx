@@ -741,6 +741,47 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Blockly2Math',
+        extensionId: 'blockly2math',
+        description: 'a faithful recreation of the original blockly blocks.',
+        iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
+        featured: true
+    },
+    {
+        name: 'Censorship',
+        extensionId: 'profanityAPI',
+        description: 'Remove profanity.',
+        iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
+        featured: true
+    },
+    {
+        name: 'Post Lit',
+        extensionId: 'jwPostLit',
+        description: 'postlit real?',
+        iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
+        featured: true
+    },
+    {
+        name: 'Core Example',
+        extensionId: 'coreExample',
+        description: 'Core Example blocks, not useful.',
+        iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
+        featured: true
+    },
+    {
+        name: 'Reflex',
+        extensionId: 'jwReflex',
+        description: 'Vector Positioning but uh, this is not supposed to be here i think?',
+        iconURL: noImageExtensionIcon,
+        tags: ['penguinmod'],
+        featured: true,
+        disabled: !(IsLocal || IsLiveTests)
+    },
+    {
         name: (
             <FormattedMessage
                 defaultMessage="Labels"
