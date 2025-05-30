@@ -167,6 +167,7 @@ import pmOperatorsExpansionExtensionIcon from './penguinmod/extensions/operators
 // jg: default icon if you are too lazy to make one and you want me to make one instead lololololololol
 // gsa: ololololololo
 import defaultExtensionIcon from './penguinmod/extensions/placeholder.png';
+import noImageExtensionIcon from './penguinmod/extensions/no_image.png';
 
 const urlParams = new URLSearchParams(location.search);
 
